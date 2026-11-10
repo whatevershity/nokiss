@@ -7,16 +7,20 @@
   <title>Nie cmokać na psa!</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400&family=Montserrat:wght@400;500;600;700&family=Oswald:wght@300;400;500;600;700&family=Sarpanch:wght@400;600&family=Vollkorn:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;300;400;500;600;700&family=Inconsolata:wght@400;700&family=Oswald:wght@200;300;400;500;600;700&family=Sarpanch:wght@400;500;600;700&family=Vollkorn:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="topbar">
-    <a href="#start" class="brand">(napis)</a>
-    <nav aria-label="Główna nawigacja">
-      <a href="#help" class="help-link">H E L P</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="nav-toggle-label">menu</span>
+      <span class="nav-toggle-bars" aria-hidden="true"></span>
+    </button>
+    <nav id="site-nav" class="topnav" aria-label="Główna nawigacja">
+      <a href="#start" class="brand">(napis)</a>
+      <a href="#help" class="help-link"><span>H E L P</span></a>
       <a href="#zasady">JEDZ</a>
-      <a href="#zasady">KAMIENI,</a>
+      <a href="#calm">KAMIENI,</a>
       <a href="#malmo">PSIE MALMO</a>
     </nav>
   </header>
@@ -31,52 +35,61 @@
       </div>
       <span class="hero-help">help</span>
       <span class="hero-quack">kwa kwa</span>
-      <img class="hero-duck" src="kaczuszka.png" alt="Mała żółta kaczuszka">
+      <img class="hero-duck" src="kaczuszka.png" alt="">
       <p class="hero-intro">To już pewne. Jeszcze nigdy w historii nie spotykaliśmy psów tak często. Dowiedz się, jak się przy nich zachowywać, żeby nie wyjść na idiotę.</p>
-      <div class="hero-title" id="hero-title" aria-label="Nie cmokać na psa!">
+      <h1 class="hero-title" id="hero-title">
         <span class="hero-yellow" aria-hidden="true"></span>
-        <span class="title-line title-first" aria-hidden="true"><span>NI</span><span class="title-e">E</span><span>C</span><span class="title-m">M</span><span>OKA</span><span class="title-c">Ć</span></span>
-        <span class="title-line title-second" aria-hidden="true"><span>NA PS</span><span class="title-a">A</span><span>!</span></span>
-      </div>
+        <span class="title-line title-first"><span class="t-ni">NI</span><span class="title-e">E</span><span class="t-c">C</span><span class="title-m">M</span><span class="t-oka">OKA</span><span class="title-c">Ć</span></span>
+        <span class="title-line title-second"><span class="t-naps">NA PS</span><span class="title-a">A</span><span class="t-bang">!</span></span>
+      </h1>
     </section>
 
-    <section id="help" class="opening-copy prose-block">
+    <section id="help" class="opening">
       <img class="opening-dog" src="t3.png" alt="Jamnik biegnący z zabawką">
       <div class="opening-text">
-      <h2>KOCHASZ PSY I GDY JE WIDZISZ CHCESZ JE TULIĆ I GŁASKAĆ, CAŁOWAĆ I JESZCZE C A Ł O W A Ć?</h2>
-      <strong class="stop">STO P!</strong>
-      <span class="opening-caption">[P JAK PIES]</span>
+        <h2 class="opening-heading">KOCHASZ PSY I GDY JE WIDZISZ CHCESZ JE TULIĆ I GŁASKAĆ, CAŁOWAĆ I JESZCZE <span class="spaced">C A Ł O W A Ć</span>&nbsp;?</h2>
+        <p class="stop-wrap"><span class="stop">STO P!</span></p>
+        <span class="opening-caption">[P JAK PIES]</span>
       </div>
     </section>
 
     <section id="zasady" class="story">
       <div class="dont-section">
-      <article class="story-copy story-copy-left">
-        <p class="eyebrow">01 / NIE RÓB TEGO</p>
-        <h2>NIE RÓB TEGO!</h2>
-        <p>Dla psa będzie lepiej, jak nawet nie będziesz patrzeć w jego stronę. Jasne, są takie, które od razu chcą się przyjaźnić i wszędzie się z tobą dotykać. Ale są też psy lękowe, które potrzebują czasu.</p>
-        <p>Jak się patrzysz i coś do nich gadasz, wycmokujesz i niuniasz, a nie daj Boże — <strong>schylasz się</strong> — czują się zagrożone.</p>
-        <p class="callout">JEŚLI NAPRAWDĘ lubisz psy,<br><strong>to się do nich nie odzywaj.</strong></p>
-        <p>Wyobraź sobie, jak cztery razy wyższe i dwa razy szersze wyłysiałe zwierzę zbliża się do ciebie. Wydaje niezrozumiałe dźwięki <span class="sound-inline">ciam ciam cmok łiii! cmom ciam gluut ciam</span> — jest coraz bliżej i bliżej.</p>
-      </article>
+        <article class="wf-copy dont-copy">
+          <h2 class="wf-title center">NIE RÓB TEGO!</h2>
+          <p>→ Dla psa będzie lepiej jak nawet nie będziesz patrzeć w jego stronę. Jasne, są takie, które od razu chcą się przyjaźnić i wszędzie się z tobą dotykać. Ale są też psy lękowe, które potrzebują czasu. Jak się patrzysz i coś do nich gadasz, wycmokujesz i niuniasz, a nie daj Boże!, <strong>SCHYLASZ SIĘ!</strong> czują się zagrożone.</p>
+          <p class="callout">JEŚLI NAPRAWDĘ, naprawdę lubisz psy,<br>To się do nich nie odzywaj.</p>
+          <p>Wyobraź sobie jak cztery razy wyższe i dwa razy szersze wyłysiałe zwierzę zbliża się do ciebie. Wydaje niezrozumiałe dźwięki <span class="sound-inline">ciam ciamcmok łiii!cmom ciamgluutciam</span> - jest coraz bliżej i bliżej - <span class="sound-inline">ciom ciom ciuciu cmok łiii!…</span> To jasne, jak możesz to spierdalasz. Ale jak jesteś na krótkim sznurku, masz problem!</p>
+          <p class="dont-warning">Gdy psy się boją, uciekają, a gdy nie mogą uciec, szczekają. Dopiero jak naprawdę muszą, atakują.</p>
+        </article>
 
-      <p class="loud-line dont-warning">GDY PSY SIĘ BOJĄ, UCIEKAJĄ. GDY NIE MOGĄ UCIEC — SZCZEKAJĄ. DOPIERO JAK NAPRAWDĘ MUSZĄ, ATAKUJĄ.</p>
-
-      <figure class="dont-dog">
-        <img src="popo i jego cien orginal.png" alt="Popo i jego cień">
-        <figcaption>[POPO / BOHATER DRUGIEGO PLANU]</figcaption>
-      </figure>
-      <div class="dont-mint" aria-hidden="true"></div>
+        <figure class="dont-dog">
+          <img src="popo i jego cien orginal.png" alt="Popo i jego cień">
+          <figcaption>[POPO / BOHATER DRUGIEGO PLANU]</figcaption>
+        </figure>
+        <div class="dont-mint" aria-hidden="true"></div>
       </div>
 
-      <section class="noise-section section-frame">
-        <article class="section-copy noise-copy">
-          <h2>...ALE TU PRZECIEŻ NIC NIE MA, MAM TYLKO WIELKI, CIĘŻKI KWADRATOWY PLECAK, KTÓRY MÓGŁBY ZABIĆ.</h2>
-          <p>A potem wsiadam na swój skuter, motocykl <span class="sound-inline">brum brum jupii</span>, z piskiem opon.</p>
-          <p>Pies słyszy dźwięki o większych częstotliwościach niż my i ma znacznie czulszy słuch. Dźwięk skutera jest dla niego ostry i przeszywający.</p>
-          <p>Wyobraź sobie, że jesteś psem z miasta i każdego dnia ktoś wali talerzami obok twojej głowy.</p>
+      <section id="calm" class="calm-section section-frame">
+        <article class="wf-copy calm-copy">
+          <h2 class="wf-title">NIE TUPAJ, GAMONIU!</h2>
+          <p class="indent-1">Nie krzycz, nie sycz, nie warcz (a zdziwić się można co ludzie wymyślają!), nie odszczekuj, nie podnoś ręki, nie udawaj, że atakujesz (ojezuśku, co za pomysł!).</p>
+          <p class="oasis indent-2">🌸 JESTEŚ OAZĄ SPOKOJU 🌸</p>
+          <p class="indent-1">Bo podobno człowiek to najmądrzejsze zwierzę. A mądry przecież, gdy istota się boi, spokojem ją najprędzej uspokoi, prawda?</p>
+          <p class="indent-1">I nie mów miłym tonem, dla złagodzenia sytuacji. Po prostu przestań. Stój normalnie, ziewnij sobie<span class="footnote-star">*</span>.</p>
         </article>
-        <p class="consequat">consequat.</p>
+        <img class="stick-dog" src="tekla z patykiem.png" alt="Tekla z dużym patykiem">
+        <div class="calm-mint" aria-hidden="true"></div>
+      </section>
+
+      <section id="malmo" class="noise-section section-frame">
+        <article class="wf-copy noise-copy">
+          <h2 class="wf-title noise-title"><span class="noise-lead">…ale ja przecież nic nie robię,</span> MAM TYLKO WIELKI, CIĘŻKI KWADRATOWY PLECAK, KTÓRY MÓGŁBY ZABIĆ,</h2>
+          <p>a potem wsiadam na swój skuter motocykl <span class="sound-inline">brum brum jupii</span>, z piskiem opon, ale jestem fajny, ja cię kręcę!</p>
+          <p>→ Tymczasem pies: słyszy dźwięki o większych częstotliwościach niż my, ma znacznie czulszy słuch. Dźwięk skutera jest dla niego ostry i przeszywający.</p>
+          <p>Wyobraź sobie, że jesteś psem z miasta i każdego dnia kilka razy nie wiadomo kiedy, nie wiadomo skąd ktoś wali talerzami obok twojej głowy. Przyznaj, że taki dzień może być trochę stresujący.</p>
+          <p>I się dziwić, że szczeka. Najświętszy by się wydarł.</p>
+        </article>
         <div class="blue-stripe" aria-hidden="true"></div>
         <img class="blue-dog" src="malmo pies.png" alt="Malmo oparty o niebieski pasek">
       </section>
@@ -84,18 +97,6 @@
       <figure class="full-photo-section">
         <img src="4.png" alt="Pies leżący w trawie">
       </figure>
-
-      <section class="calm-section section-frame">
-        <article class="section-copy calm-copy">
-          <h2>NIE TUPAJ, GAMONIU!</h2>
-          <p>Nie krzycz, nie sycz, nie warcz, nie odszczekuj, nie podnoś ręki, nie udawaj, że atakujesz.</p>
-          <p><span class="tiny-sound">iii! cmom ciam gluut ciam</span></p>
-          <p>Bo podobno człowiek to najmądrzejsze zwierzę. A mądry przecież, gdy istota się boi, spokojem ją najprędzej uspokoi, prawda?</p>
-          <p>I nie mów miłym tonem dla złagodzenia sytuacji. Po prostu przestań. Stój normalnie, ziewnij sobie.</p>
-        </article>
-        <img class="stick-dog" src="tekla z patykiem.png" alt="Tekla z dużym patykiem">
-        <div class="calm-mint" aria-hidden="true"></div>
-      </section>
 
       <figure class="mint-dogs-section">
         <img src="mobile.png" alt="Dwa psy dotykające się nosami">
@@ -109,9 +110,29 @@
   </main>
 
   <footer id="footer" class="long-footer">
-    <div class="footer-copy"><span>NIE CMOKAĆ NA PSA</span><span>♡ PSIE MALMO</span></div>
+    <div class="footer-copy">
+      <span>NIE CMOKAĆ NA PSA</span>
+      <span>♡ PSIE MALMO</span>
+    </div>
     <div class="footer-yellow" aria-hidden="true"></div>
     <img class="footer-dog" src="stopka.png" alt="Pies odpoczywający pod kołdrą">
   </footer>
+
+  <script>
+    (() => {
+      const toggle = document.querySelector(".nav-toggle");
+      const nav = document.getElementById("site-nav");
+      if (!toggle || !nav) return;
+      const setOpen = (open) => {
+        document.body.classList.toggle("nav-open", open);
+        toggle.setAttribute("aria-expanded", open ? "true" : "false");
+      };
+      toggle.addEventListener("click", () => setOpen(!document.body.classList.contains("nav-open")));
+      nav.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => setOpen(false)));
+      window.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") setOpen(false);
+      });
+    })();
+  </script>
 </body>
 </html>
