@@ -51,19 +51,19 @@ img {
   white-space: nowrap;
 }
 
-.phone-nav .help-link {
+.phone-nav .lang-link {
   margin-left: auto;
 }
 
-.help-link span {
+.lang-link span {
   display: inline-block;
   padding: 0 4px;
   color: #fff;
   background: var(--blue);
 }
 
-.help-link:hover span,
-.help-link:focus-visible span {
+.lang-link:hover span,
+.lang-link:focus-visible span {
   color: #343434;
   background: var(--green);
 }
