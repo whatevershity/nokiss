@@ -1,9 +1,8 @@
-# Nie cmokać na psa — wersja kodowa
+# Nie cmokać na psa — start od widoku telefonu
 
-Otwórz plik `index.html` w przeglądarce, aby zobaczyć stronę.
+Otwórz `index.html` w przeglądarce (najlepiej w trybie telefonu ~393px).
 
-Pliki:
+Na razie na ekranie:
 
-- `index.html` — treść i struktura strony,
-- `styles.css` — wygląd desktopu, tabletu i telefonu,
-- pliki PNG — zdjęcia wykorzystane w projekcie.
+1. zdjęcie `m1.png`,
+2. tytuł **NIE CMOKAĆ NA PSA!** w stylu oryginału (Oswald + Sarpanch + żółty pasek), pomniejszony pod telefon.
