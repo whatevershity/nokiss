@@ -39,7 +39,7 @@ img {
   align-items: center;
   gap: 18px;
   min-height: 40px;
-  margin: 0 16px 10px;
+  margin: 0 16px 6px;
   font-family: "Oswald", sans-serif;
 }
 
@@ -67,86 +67,59 @@ img {
   background: var(--green);
 }
 
-/* —— H1 na kolorowych paskach —— */
-.title-block {
+/* —— Duży tytuł na kolorowych chipach —— */
+.title-stack {
   position: relative;
-  z-index: 2;
-  width: calc(100% - 32px);
-  max-width: 360px;
-  margin: 0 auto;
-  aspect-ratio: 304 / 220;
-}
-
-.title-stripes {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  pointer-events: none;
-}
-
-.stripe {
-  position: absolute;
-  display: block;
-}
-
-.stripe-mint {
-  left: 4%;
-  top: 6%;
-  width: 58%;
-  height: 42%;
-  background: var(--mint);
-  transform: rotate(-11deg);
   z-index: 1;
-}
-
-.stripe-yellow {
-  left: 8%;
-  top: 34%;
-  width: 86%;
-  height: 28%;
-  background: var(--yellow);
-  transform: rotate(-4deg);
-  z-index: 2;
-}
-
-.stripe-magenta {
-  left: 10%;
-  top: 58%;
-  width: 78%;
-  height: 22%;
-  background: var(--magenta);
-  transform: rotate(1deg);
-  z-index: 3;
+  width: 100%;
+  padding: 0 10px;
 }
 
 .hero-title {
-  position: absolute;
-  inset: 0;
-  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
   margin: 0;
   font-weight: 600;
   line-height: 1;
 }
 
-.line {
-  position: absolute;
-  display: flex;
+.chip {
+  display: inline-flex;
   align-items: flex-end;
+  justify-content: center;
+  padding: .02em .12em 0;
   color: #000;
   white-space: nowrap;
+  line-height: .9;
 }
 
-.line-1 { top: 0%; left: 12%; }
-.line-2 { top: 32%; left: 7%; }
-.line-3 { top: 64%; left: 18%; }
+.chip-nie {
+  background: var(--mint);
+  transform: rotate(5deg);
+  margin-right: 22%;
+  z-index: 3;
+}
 
-.space { width: .35em; }
+.chip-cmokac {
+  background: var(--yellow);
+  transform: rotate(-3deg);
+  z-index: 2;
+}
+
+.chip-napsa {
+  background: var(--magenta);
+  transform: rotate(0.5deg);
+  margin-left: 4%;
+  z-index: 1;
+}
 
 .n-big,
 .m-big,
 .a-big {
   font-family: "Sarpanch", sans-serif;
-  font-size: clamp(40px, 11vw, 52px);
+  font-size: clamp(70px, 20vw, 92px);
   font-weight: 600;
   line-height: 1;
 }
@@ -161,37 +134,37 @@ img {
 .p,
 .s {
   font-family: "Oswald", sans-serif;
-  font-size: clamp(34px, 9.2vw, 44px);
+  font-size: clamp(58px, 16.5vw, 78px);
   font-weight: 600;
   line-height: 1;
   transform: scaleX(.84);
-  margin-right: -0.04em;
+  margin-right: -0.05em;
 }
 
 .c-kreska {
   display: inline-block;
   font-family: "Trebuchet MS", "Lucida Grande", sans-serif;
-  font-size: clamp(30px, 8vw, 38px);
+  font-size: clamp(52px, 14.5vw, 70px);
   font-weight: 700;
   line-height: 1;
-  transform: translate(-2px, 0) scaleX(.84) rotate(-9deg);
+  transform: translate(-3px, 0) scaleX(.84) rotate(-9deg);
 }
 
-.m-big { position: relative; top: .05em; }
-.a-big { position: relative; top: .04em; margin-left: -0.04em; }
+.m-big { position: relative; top: .04em; }
+.a-big { position: relative; top: .03em; margin-left: -0.03em; }
 
-/* —— Pies —— */
+/* —— Pies: głowa nachodzi na dolną ⅓ magenta —— */
 .hero-dog {
   position: relative;
-  z-index: 3;
+  z-index: 5;
   display: flex;
   justify-content: center;
-  margin: -22% 0 -4%;
-  padding: 0 8px;
+  margin: -5.8rem 0 -8%;
+  padding: 0 2px;
 }
 
 .hero-dog img {
-  width: min(82%, 340px);
+  width: min(96%, 400px);
   height: auto;
 }
 
@@ -217,13 +190,9 @@ img {
   text-transform: uppercase;
 }
 
-.q-line {
-  display: block;
-}
+.q-line { display: block; }
 
-.spaced {
-  letter-spacing: .22em;
-}
+.spaced { letter-spacing: .22em; }
 
 .q-last {
   position: relative;
