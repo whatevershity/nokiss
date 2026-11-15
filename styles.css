@@ -2,6 +2,8 @@
   --ink: #121212;
   --paper: #fff;
   --yellow: #fff200;
+  --blue: #2eaee3;
+  --green: #a7e831;
 }
 
 * { box-sizing: border-box; }
@@ -23,12 +25,47 @@ img {
   max-width: 100%;
 }
 
-/* —— Widok telefonu: m1 + tytuł —— */
+/* —— Widok telefonu: menu + m1 + tytuł —— */
 .phone-hero {
   width: 100%;
   max-width: 430px;
   margin: 0 auto;
-  padding: 12px 16px 32px;
+  padding: 8px 16px 32px;
+}
+
+.phone-nav {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  min-height: 40px;
+  margin-bottom: 8px;
+  font-family: "Oswald", sans-serif;
+}
+
+.phone-nav a {
+  color: inherit;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 20px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.phone-nav .help-link {
+  margin-left: auto;
+}
+
+.help-link span {
+  display: inline-block;
+  padding: 0 4px;
+  color: #fff;
+  background: var(--blue);
+}
+
+.help-link:hover span,
+.help-link:focus-visible span {
+  color: #343434;
+  background: var(--green);
 }
 
 .phone-photo {
