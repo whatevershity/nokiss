@@ -1,5 +1,4 @@
-# Nie cmokać na psa — kopia Webflow (desktop short)
+# Nie cmokać na psa
 
-Źródło: https://niecmokacnapsa.webflow.io
-Jedyna zmiana: HELP → WOOF?
-Wersja telefonu zapisana na branchu `cursor/phone-hero-m1-title-f8c3`.
+- `niecmokac1/` — zapisana desktopowa kopia short Webflow (HELP→WOOF?)
+- root `index.html` — propozycja mobile z tego samego materiału
