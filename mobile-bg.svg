@@ -1,41 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 844" width="390" height="844" fill="none" preserveAspectRatio="none">
-  <rect width="390" height="844" fill="#000"/>
-
-  <!-- Edge-to-edge bands; black only in the seams between them -->
+  <!-- Full-bleed: colors meet edge-to-edge, no black frame or gutters -->
 
   <!-- 1 yellow — bottom tilts down L→R -->
-  <path
-    fill="#FEED01"
-    d="M0 0
-       H390
-       V214
-       L0 174
-       Z"/>
+  <path fill="#FEED01" d="M0 0 H390 V211 L0 171 Z"/>
 
-  <!-- 2 blue — top follows yellow, bottom flat -->
-  <path
-    fill="#3D8BFF"
-    d="M0 194
-       L390 234
-       V402
-       H0
-       Z"/>
+  <!-- 2 blue — shares yellow seam, bottom flat -->
+  <path fill="#3D8BFF" d="M0 171 L390 211 V422 H0 Z"/>
 
-  <!-- 3 green — top flat, bottom tilts down L→R -->
-  <path
-    fill="#36D489"
-    d="M0 422
-       H390
-       V636
-       L0 596
-       Z"/>
+  <!-- 3 green — flat top, bottom tilts down L→R -->
+  <path fill="#36D489" d="M0 422 H390 V633 L0 593 Z"/>
 
-  <!-- 4 pink — top follows green -->
-  <path
-    fill="#FD28CE"
-    d="M0 616
-       L390 656
-       V844
-       H0
-       Z"/>
+  <!-- 4 pink — shares green seam to bottom edge -->
+  <path fill="#FD28CE" d="M0 593 L390 633 V844 H0 Z"/>
 </svg>
