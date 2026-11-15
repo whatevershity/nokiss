@@ -1,9 +1,5 @@
-# Nie cmokać na psa — wersja kodowa
+# Nie cmokać na psa — kopia Webflow (desktop short)
 
-Otwórz plik `index.html` w przeglądarce, aby zobaczyć stronę.
-
-Pliki:
-
-- `index.html` — treść i struktura strony,
-- `styles.css` — wygląd desktopu, tabletu i telefonu,
-- pliki PNG — zdjęcia wykorzystane w projekcie.
+Źródło: https://niecmokacnapsa.webflow.io
+Jedyna zmiana: HELP → WOOF?
+Wersja telefonu zapisana na branchu `cursor/phone-hero-m1-title-f8c3`.
