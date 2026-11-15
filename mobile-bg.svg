@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 844" width="390" height="844" fill="none">
+  <rect width="390" height="844" fill="#000"/>
+
+  <!-- 1 yellow — bottom edge tilts down L→R -->
+  <path
+    fill="#FEED01"
+    d="M18 18
+       H372
+       A14 14 0 0 1 386 32
+       V228
+       L4 188
+       V32
+       A14 14 0 0 1 18 18
+       Z"/>
+
+  <!-- 2 blue — top follows yellow, bottom flat -->
+  <path
+    fill="#3D8BFF"
+    d="M4 208
+       L386 248
+       V392
+       A14 14 0 0 1 372 406
+       H18
+       A14 14 0 0 1 4 392
+       Z"/>
+
+  <!-- 3 green — top flat, bottom tilts down L→R -->
+  <path
+    fill="#36D489"
+    d="M18 426
+       H372
+       A14 14 0 0 1 386 440
+       V640
+       L4 600
+       V440
+       A14 14 0 0 1 18 426
+       Z"/>
+
+  <!-- 4 pink — top follows green, flush bottom -->
+  <path
+    fill="#FD28CE"
+    d="M4 620
+       L386 660
+       V812
+       A14 14 0 0 1 372 826
+       H18
+       A14 14 0 0 1 4 812
+       Z"/>
+</svg>
