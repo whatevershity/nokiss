@@ -6,42 +6,19 @@
   <title>Mobile bg — nasze kolory</title>
   <style>
     * { box-sizing: border-box; }
+    html, body { margin: 0; height: 100%; }
     body {
-      margin: 0;
-      min-height: 100vh;
-      display: grid;
-      place-items: center;
-      background: #111;
-      font-family: system-ui, sans-serif;
-      color: #eee;
-    }
-    .phone {
-      width: min(390px, 92vw);
-      aspect-ratio: 390 / 844;
-      overflow: hidden;
-      box-shadow: 0 20px 60px rgba(0,0,0,.5);
       background: #000;
     }
-    .phone img {
+    img {
       display: block;
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
-    p {
-      margin: 16px 0 0;
-      font-size: 13px;
-      opacity: .7;
-      text-align: center;
-    }
   </style>
 </head>
 <body>
-  <div>
-    <div class="phone">
-      <img src="mobile-bg.svg" alt="Tło mobile: żółty, niebieski, zielony, różowy">
-    </div>
-    <p>#FEED01 · #3D8BFF · #36D489 · #FD28CE</p>
-  </div>
+  <img src="mobile-bg.svg" alt="Tło mobile: żółty, niebieski, zielony, różowy">
 </body>
 </html>
