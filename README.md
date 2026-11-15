@@ -1,9 +1,4 @@
-# Nie cmokać na psa — wersja kodowa
+# Nie cmokać na psa
 
-Otwórz plik `index.html` w przeglądarce, aby zobaczyć stronę.
-
-Pliki:
-
-- `index.html` — treść i struktura strony,
-- `styles.css` — wygląd desktopu, tabletu i telefonu,
-- pliki PNG — zdjęcia wykorzystane w projekcie.
+- `niecmokac1/` — zapisana desktopowa kopia short Webflow (HELP→WOOF?)
+- root `index.html` — propozycja mobile z tego samego materiału
