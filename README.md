@@ -1,9 +1,9 @@
-# Nie cmokać na psa — wersja kodowa
+# Nie cmokać na psa — widok telefonu
 
-Otwórz plik `index.html` w przeglądarce, aby zobaczyć stronę.
+Otwórz `index.html` w przeglądarce (tryb telefonu ~393px).
 
-Pliki:
-
-- `index.html` — treść i struktura strony,
-- `styles.css` — wygląd desktopu, tabletu i telefonu,
-- pliki PNG — zdjęcia wykorzystane w projekcie.
+Hero (od góry):
+1. menu: JEDZ · KAMIENI, · **WOOF?** (przełącznik EN; na EN: HAU?),
+2. tytuł na kolorowych paskach (mięta / żółć / magenta),
+3. wycięty pies (`hero-dog.png`),
+4. tekst KOCHASZ PSY… + różowy **STO P!**
